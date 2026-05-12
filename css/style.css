@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Style header*/
+
+.acme-regular {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 515;
+  font-style: normal;
+}
+
+body{
+    font-family:"Lato", sans-serif;
+    line-height: 1.2;
+    color:rgb(0, 0, 87);
+    background-color:rgb(255, 255, 255);
+}
+
+header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    line-height:1.2;
+    padding: 20px;
+    background-image: url("	https://mims3000.github.io/338_lecture3/images/st_marys_church_howth.jpg");
+    background-size: 100%;
+    background-position: center;
+    position: sticky;
+}
+
+header h1{
+    /*I was trying to fix the opacity of the background image, but didn't seem to work this way*/
+    opacity:1;
+    color: solid black;
+    z-index: 1;
+}
+
+ul{
+    list-style-type: none;
+    display:flex;
+    margin: 0;
+    padding: 0 18px;
+    gap: 19px;
+}
+
+/*Following code from CodeGenes.net*/
+.back-to-top {
+    /* Positioning: fixed in bottom-right corner */
+    position: relative;
+    bottom: 2; /* 2rem from the bottom */
+    right: 2; /* 2rem from the right */
+    z-index: 100; /* Ensure it stays above other content */
+ 
+    /* Colors and spacing */
+    background: #000000; /* Blue background */
+    color: white; /* White arrow */
+    text-align: center;
+    line-height: 2; /* Center arrow vertically */
+    font-size: 1.3rem; 
+ 
+    /* Decorations */
+    text-decoration: none; /* Remove default link underline */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Soft shadow */
+ 
+    /* Transition for hover effects */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+ 
+/* Hover effect */
+.back-to-top:hover {
+    background: #000000; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom */
+}
+
+/*I was trying to make nav bar have dropdown on hover versus clicking the triangle shape for dropdown
+a{
+    color:rgb(0, 0, 0);
+}*/
+
+/*.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.current{
+    text-transform:uppercase;
+    font-weight:150%;
+}
+*/
